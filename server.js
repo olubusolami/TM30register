@@ -31,9 +31,7 @@ const registerRoute = require("./registerRoute");
   app.use(express.json());
   
   //Routes
-  app.use('/', (req, res)=>{
-    res.status(200).json({message: 'welcome'})
-})
+
   app.use("/", registerRoute);
 
   port = process.env.PORT || 5000;
