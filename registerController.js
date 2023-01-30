@@ -1,6 +1,5 @@
 const Register = require("./registerModel");
 const sendEmail = require("./sendEmail")
-
 //register
 exports.createStudent = async function (req, res) {
   const student = req.body;
