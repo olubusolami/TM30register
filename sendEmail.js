@@ -25,11 +25,11 @@ const sendEmail = async (receiver, content) => {
 
     var config = {
       method: "post",
-      url: `${process.env.base_url}`,
+      url: `${process.env.BASE_URL}`,
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "client-id": `${process.env.staging}`,
+        "client-id": `${process.env.STAGING}`,
         // 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6ImxvY2FsX2Y3NDU1ZmZhNTU4MDI1OTg0ODUwIiwiZW1haWwiOiJhZGV5ZW1vZGFub2ludGVkNUBnbWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDEzOjUxOjEzLjA0OVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDE0OjE3OjQ2Ljk1NVoiLCJlbWFpbFZlcmlmaWVkQXQiOjE2NDQzMjk4NjY3MjEsInNlY3JldCI6ImxvY2FsX2NhM2IwZGZiN2ExMmY0NGY3ZTkzIiwiaWQiOiI2MjAyNzU1MWU5YjI4MzRiNTA0YmEzZGIiLCJ0eXBlIjoiYXV0aCIsImF1dGhvcml6ZWRTZXJ2aWNlIjpbXSwiZXhwIjoxNjQ2NjkyNjQ0LCJkYXRhIjoiNjIwMjc1NTFlOWIyODM0YjUwNGJhM2RiIiwiaWF0IjoxNjQ2NjQ5NDQ0fQ.iCLcN6Vutsr5VJvn244oj8K_ZOyXN_YmerjfQwq6PEs'
       },
       data: data,
